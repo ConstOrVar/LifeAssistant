@@ -21,3 +21,8 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+tasks.register("setupDevEnv") {
+    it.dependsOn(tasks.named("ktlintApplyToIdea"))
+    it.dependsOn(tasks.named("addKtlintCheckGitPreCommitHook"))
+}
