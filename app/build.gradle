@@ -2,6 +2,14 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id "org.jlleitschuh.gradle.ktlint"
+    id "io.gitlab.arturbosch.detekt"
+}
+
+apply(from: "ktlint_config.gradle")
+
+apply(from: "detekt_config.gradle")
+project.tasks.withType(io.gitlab.arturbosch.detekt.Detekt).configureEach {
+    exclude("**/generated/**")
 }
 
 android {
@@ -32,17 +40,6 @@ android {
 
     kotlinOptions {
         jvmTarget = javaVersion
-    }
-}
-
-ktlint {
-    android = true
-    additionalEditorconfigFile = file("../.editorconfig")
-    filter {
-        exclude("**/generated/**")
-    }
-    reporters {
-        reporter "json"
     }
 }
 

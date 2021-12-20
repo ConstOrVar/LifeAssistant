@@ -1,0 +1,4 @@
+detekt {
+    config = files("config/detekt/config.yml")
+    baseline = file("config/detekt/baseline.xml")
+}

@@ -1,0 +1,10 @@
+ktlint {
+    android = true
+    additionalEditorconfigFile = file("../.editorconfig")
+    filter {
+        exclude("**/generated/**")
+    }
+    reporters {
+        reporter "json"
+    }
+}
