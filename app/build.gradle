@@ -72,6 +72,8 @@ dependencies {
     implementation 'androidx.compose.material:material-icons-extended:1.0.5'
     // end region
 
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+
     debugImplementation "com.squareup.leakcanary:leakcanary-android-process:2.7"
 
     implementation platform("com.google.firebase:firebase-bom:29.0.3")
