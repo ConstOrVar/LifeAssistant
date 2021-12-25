@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "291243166016",
+    "project_id": "lifeassistant-7b867",
+    "storage_bucket": "lifeassistant-7b867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291243166016:android:00ea022060d97679b312a5",
+        "android_client_info": {
+          "package_name": "ru.komar.lifeassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291243166016-s8plt2d7fgd6tvmqascikp8uf2ql2a31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfsxRvKpvJQXK8TJizlj67oINV-9AXY3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291243166016-s8plt2d7fgd6tvmqascikp8uf2ql2a31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
