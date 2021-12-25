@@ -5,6 +5,8 @@ plugins {
     id "io.gitlab.arturbosch.detekt"
 }
 
+apply plugin: 'com.google.gms.google-services'
+
 apply(from: "ktlint_config.gradle")
 
 apply(from: "detekt_config.gradle")
@@ -49,4 +51,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
 
     debugImplementation "com.squareup.leakcanary:leakcanary-android-process:2.7"
+
+    implementation platform("com.google.firebase:firebase-bom:29.0.3")
+    implementation "com.google.firebase:firebase-analytics"
 }
